@@ -1,6 +1,5 @@
-def main():
-    print('Welcome to the Games!')
+from games.cli import welcome_user
 
 
 if __name__ == "__main__":
-    main()
+    welcome_user()
