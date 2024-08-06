@@ -1,16 +1,18 @@
 import prompt
 import random
+
+from math import gcd
 from .hello import hello
 
-
-def even_game():
+def gcd_game():
     name = hello()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Find the greatest common divisor of given numbers.')
     for i in range(3):
-        number = random.randint(0, 1000)
-        print(f'Question: {number}')
-        correct_answer = ['yes', 'no'][number % 2]
-        answer = prompt.string('Your answer: ')
+        number1 = random.randint(0, 100)
+        number2 = random.randint(0, 100)
+        correct_answer = gcd(number1, number2)
+        print(f'Question: {number1} {number2}')
+        answer = int(prompt.string('Your answer: '))
         if answer == correct_answer:
             print('Correct!')
         else:
@@ -23,5 +25,4 @@ def even_game():
             return
         
 if __name__ == "__main__":
-    even_game()
-
+    gcd_game()
