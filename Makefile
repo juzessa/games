@@ -9,3 +9,7 @@ calc:
 
 gcd:
 	poetry run python -m games.scripts.gcd
+prime:
+	poetry run python -m games.scripts.prime
+progression:
+	poetry run python -m games.scripts.progression

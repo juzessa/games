@@ -6,7 +6,8 @@ def is_even(num: str) -> bool:
 
 
 def even_game():
+    description = 'Answer "yes" if the number is even, otherwise answer "no".'
     number = random.randint(0, 1000)
     question = f'Question: {number}'
     correct_answer = ['yes', 'no'][number % 2]
-    return question, correct_answer
+    return description, question, correct_answer

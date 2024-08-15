@@ -10,9 +10,10 @@ def make_progression():
 
 
 def progression_game():
+    description = 'What number is missing in the progression?'
     progression = make_progression()
     hide = random.randint(1, len(progression))
     correct_answer = progression[hide]
     progression[hide] = '..'
     question = f'Question: {' '.join(str(i) for i in progression)}'
-    return question, correct_answer
+    return description, question, str(correct_answer)

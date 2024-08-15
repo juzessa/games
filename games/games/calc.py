@@ -2,6 +2,7 @@ import random
 
 
 def calc_game():
+    description = 'What is the result of the expression?'
     number1 = random.randint(0, 100)
     number2 = random.randint(0, 100)
     operation = random.choice(['+', '-', '*'])
@@ -10,4 +11,4 @@ def calc_game():
         '-': number1 - number2,
         '*': number1 * number2}[operation]
     question = f'Question: {number1} {operation} {number2}'
-    return question, correct_answer
+    return description, question, str(correct_answer)
