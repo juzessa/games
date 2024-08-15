@@ -3,7 +3,8 @@ from games.engine import engine
 
 
 def even():
-    engine(even_game)
+    description = 'Answer "yes" if the number is even, otherwise answer "no".'
+    engine(description, even_game)
     
 
 if __name__ == "__main__":

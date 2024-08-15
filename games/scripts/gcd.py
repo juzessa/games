@@ -3,7 +3,8 @@ from games.engine import engine
 
 
 def gcd():
-    engine(gcd_game)
+    description = 'Find the greatest common divisor of given numbers.'
+    engine(description, gcd_game)
     
 
 if __name__ == "__main__":

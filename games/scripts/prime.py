@@ -3,7 +3,8 @@ from games.engine import engine
 
 
 def prime():
-    engine(prime_game)
+    description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    engine(description, prime_game)
     
 
 if __name__ == "__main__":

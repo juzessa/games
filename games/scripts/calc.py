@@ -3,7 +3,8 @@ from games.engine import engine
 
 
 def calc():
-    engine(calc_game)
+    description = 'What is the result of the expression?'
+    engine(description, calc_game)
     
 
 if __name__ == "__main__":

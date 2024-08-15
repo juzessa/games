@@ -3,7 +3,8 @@ from games.engine import engine
 
 
 def progression():
-    engine(progression_game)
+    description = 'What number is missing in the progression?'
+    engine(description, progression_game)
     
 
 if __name__ == "__main__":
